@@ -1,0 +1,18 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1200px;
+    gap: 1.3rem;
+    margin: 0 auto;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+    padding: 1.5rem;
+    background-color: var(--color-background-alt);
+    border: 1px solid var(--border-card-color);
+    border-radius: var(--border-radius);
+    margin-bottom: 2rem;
+}

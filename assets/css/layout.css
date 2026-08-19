@@ -1,34 +1,32 @@
 body {
   background-color: var(--color-background);
   font-family: var(--font-primary);
-  padding-top: 3.25rem;
-}
-
-.section-alt {
-  background-color: var(--color-background-alt);
+  padding-top: var(--navbar-height);
 }
 
 #navbar{
-    background-color: var(--color-background-alt);
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    align-items: center;
+  background-color: var(--color-background-alt);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: var(--navbar-height);
+  position: fixed;
+  top: 0;
+  left: 0;
+  align-items: center;
 }
 
 #navbar ul {
-    display: flex;
-    gap: 2rem;
-    list-style: none;
+  display: flex;
+  gap: 0.50rem;
+  list-style: none;
+  margin-right: 4rem;
 }
 
 .navItens{
-    color: var(--color-text);
-    text-align: center;
-    padding: 14px 16px;
+  color: var(--color-text);
+  text-align: center;
+  padding: 14px 16px;
 }
 
 .logo{
@@ -36,4 +34,74 @@ body {
   font-weight: var(--font-weight-semibold);
   color: var(--color-primary-on-dark);
   text-decoration: none;
+  margin-left: 4rem;
+}
+
+.navItens a:hover{
+  color: var(--color-primary-on-dark);
+}
+
+.navItens a {
+  position: relative;
+}
+
+.navItens a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-primary-on-dark);
+  transition: width 0.3s ease;
+}
+
+.navItens a:hover::after {
+  width: 100%;
+}
+
+.section-alt {
+  background-color: var(--color-background-alt);
+}
+
+.section-title{
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-semibold);
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.section-subtitle{
+  font-size: var(--font-size-subtitle);
+  font-weight: var(--font-weight-regular); /*acho q nao precisa*/
+  text-align: center;
+  color: var(--color-text);
+  margin: 0 auto;
+  max-width: 1000px;
+  margin-bottom: 2rem;
+}
+
+#about .section-title,
+#projects .section-title{
+  color: var(--color-primary-on-dark);
+}
+
+#skills .section-title,
+#contact .section-title{
+  color: var(--color-secondary-on-light);
+}
+
+.img-card{
+  height: 3rem;
+  width: 3rem;
+}
+
+.card-title{
+  color: var(--color-primary-on-dark);
+  font-size: var(--font-size-heading);
+}
+
+.card-subtitle{
+  color: var(--color-text);
+  font-size: var(--font-size-body);
 }
