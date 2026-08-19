@@ -1,0 +1,39 @@
+body {
+  background-color: var(--color-background);
+  font-family: var(--font-primary);
+  padding-top: 3.25rem;
+}
+
+.section-alt {
+  background-color: var(--color-background-alt);
+}
+
+#navbar{
+    background-color: var(--color-background-alt);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+}
+
+#navbar ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+}
+
+.navItens{
+    color: var(--color-text);
+    text-align: center;
+    padding: 14px 16px;
+}
+
+.logo{
+  font-family: 'JetBrains Mono', monospace;
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-primary-on-dark);
+  text-decoration: none;
+}
