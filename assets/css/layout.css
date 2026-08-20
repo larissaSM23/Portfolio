@@ -1,3 +1,8 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--navbar-height);
+}
+
 body {
   background-color: var(--color-background);
   font-family: var(--font-primary);
@@ -26,19 +31,22 @@ body {
 .navItens{
   color: var(--color-text);
   text-align: center;
-  padding: 14px 16px;
+  padding: 0.875rem 1rem;
+  font-size: var(--font-size-heading);
 }
 
 .logo{
   font-family: 'JetBrains Mono', monospace;
   font-weight: var(--font-weight-semibold);
-  color: var(--color-primary-on-dark);
+  color: var(--color-primary);
   text-decoration: none;
   margin-left: 4rem;
+  font-size: var(--font-size-heading);
 }
 
-.navItens a:hover{
-  color: var(--color-primary-on-dark);
+.navItens a:hover,
+.navItens a.active{
+  color: var(--color-primary);
 }
 
 .navItens a {
@@ -52,11 +60,12 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: var(--color-primary-on-dark);
+  background-color: var(--color-primary);
   transition: width 0.3s ease;
 }
 
-.navItens a:hover::after {
+.navItens a:hover::after,
+.navItens a.active::after{
   width: 100%;
 }
 
@@ -68,7 +77,8 @@ body {
   font-size: var(--font-size-title);
   font-weight: var(--font-weight-semibold);
   text-align: center;
-  padding: 2rem 0;
+  padding: 1.1rem 0 0.3rem 0;
+  color: var(--color-primary);
 }
 
 .section-subtitle{
@@ -78,30 +88,14 @@ body {
   color: var(--color-text);
   margin: 0 auto;
   max-width: 1000px;
-  margin-bottom: 2rem;
+  margin-bottom: 0.9rem;
 }
 
-#about .section-title,
-#projects .section-title{
-  color: var(--color-primary-on-dark);
+#contact .card {
+  max-width: 30rem;
+  margin: 0 auto;
 }
 
-#skills .section-title,
-#contact .section-title{
-  color: var(--color-secondary-on-light);
-}
-
-.img-card{
-  height: 3rem;
-  width: 3rem;
-}
-
-.card-title{
-  color: var(--color-primary-on-dark);
-  font-size: var(--font-size-heading);
-}
-
-.card-subtitle{
-  color: var(--color-text);
-  font-size: var(--font-size-body);
+#contact {
+  padding-bottom: 3rem;
 }

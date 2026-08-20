@@ -1,13 +1,14 @@
 :root{
-    --color-primary-on-dark: #6750A4;
-    --color-secondary-on-light: #7D68B4;
+    --color-primary: #A07BFF;
 
-    --color-background: #1A181B;
-    --color-background-alt: rgba(48, 48, 48, 0.6);
+    --color-background: #1A1A1A;
+    --color-background-transparent: rgba(26, 26, 26, 0.6);
+    --color-background-alt: #303030;
+    --color-background-alt-transparent: rgba(48, 48, 48, 0.6);
 
     --border-card-color: rgba(229, 229, 229, 0.6);
 
-    --color-badge-bg: #5A5A5A;
+    --color-badge-bg: rgba(90, 90, 90, 0.6);
     --color-text: #EAE3D2;
 
     --font-primary: 'Instrumental Sans', sans-serif;
@@ -15,11 +16,11 @@
     --font-weight-semibold: 600;
 
     --font-size-title: 3rem;
-    --font-size-subtitle: 1rem;
-    --font-size-heading: 1.1rem; /*projects, skills title*/
+    --font-size-subtitle: 1.1rem;
+    --font-size-subheading: 1.5rem;
+    --font-size-heading: 1.2rem; /*projects, skills title*/
     --font-size-body: 0.8rem; /*paragraph*/
-    --font-size-badge-lg: 1.5rem; /*languages badge*/
-    --font-size-badge-sm: 1.0625rem; /*languages badge projects*/
+    --font-size-badge-lg: 0.9rem; /*languages badge*/
     --font-size-caption: 0.9375rem; /*projects, teamwork subtitles*/
 
     --border-radius: 0.9375rem;
