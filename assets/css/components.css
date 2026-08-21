@@ -82,6 +82,9 @@
 .img-card{
   height: 3rem;
   width: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--color-icon);
 }
 
 .skills{
@@ -113,7 +116,7 @@
   align-items: center;
   gap: 0.5rem;
   background-color: var(--color-primary);
-  color: var(--color-text);
+  color: var(--color-on-primary);
   text-decoration: none;
   padding: 0.4rem 1rem;
   border-radius: var(--border-radius);
@@ -121,8 +124,8 @@
   margin-top: 1.5rem;
 }
 
-.btn-code img,
-.icon-box img{
+.btn-code .icon,
+.icon-box .icon{
   width: 1.2rem;
   height: 1.2rem;
 }
@@ -134,25 +137,27 @@
 }
 
 .social-links{
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 2rem;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  gap: 1rem;
 }
 
 .social-link{
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
-    color: var(--color-text);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-text);
+  
 }
 
 .icon-box{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--color-primary);
-    border-radius: var(--border-radius);
-    width: 2.5rem;
-    height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-primary);
+  border-radius: var(--border-radius);
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--color-on-primary);;
 }

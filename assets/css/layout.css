@@ -25,7 +25,71 @@ body {
   display: flex;
   gap: 0.50rem;
   list-style: none;
+}
+
+.nav-right{
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
   margin-right: 4rem;
+}
+
+.theme-toggle{
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.theme-toggle .track{
+  display: flex;
+  align-items: center;
+  width: 3.4rem;
+  height: 1.9rem;
+  background-color: var(--toggle-track-off);
+  border-radius: 999px;
+  padding: 0.2rem;
+  box-sizing: border-box;
+  transition: background-color var(--transition-speed) ease;
+}
+
+.theme-toggle .thumb{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: var(--toggle-thumb-off);
+  color: var(--toggle-icon-off);
+  transform: translateX(0);
+  transition: transform var(--transition-speed) ease, background-color var(--transition-speed) ease, color var(--transition-speed) ease;
+}
+
+.theme-toggle .icon{
+  width: 1rem;
+  height: 1rem;
+  display: none;
+}
+
+[data-theme="dark"] .theme-toggle .icon-moon{
+  display: block;
+}
+
+[data-theme="light"] .theme-toggle .track{
+  background-color: var(--color-primary);
+}
+
+[data-theme="light"] .theme-toggle .thumb{
+  transform: translateX(1.5rem);
+  background-color: #FFFFFF;
+  color: var(--color-primary);
+}
+
+[data-theme="light"] .theme-toggle .icon-sun{
+  display: block;
 }
 
 .navItens{
@@ -98,4 +162,78 @@ body {
 
 #contact {
   padding-bottom: 3rem;
+}
+
+.menu{
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 3.5rem;
+  height: 1.5rem;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+@media (max-width: 768px){
+  section{
+    padding: 1.5rem;
+  }
+
+  #navbar ul{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: var(--navbar-height);
+    left: 0;
+    width: 100%;
+    background-color: var(--color-background-alt);
+    border-top: 1px solid var(--color-primary);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity var(--transition-speed) ease, transform var(--transition-speed) ease;
+  }
+
+  #navbar ul.open{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .menu{
+    display: flex;
+  }
+
+  #about .badges{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .skills-category{
+    max-width: none;
+  }
+
+  .nav-right{
+    margin-right: 1.5rem;
+    gap: 1rem;
+  }
+}
+
+.bar{
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-primary);
+  display: block;
+  border-radius: 2px;
 }

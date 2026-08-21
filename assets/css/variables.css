@@ -1,6 +1,6 @@
 :root{
     --color-primary: #A07BFF;
-
+    --color-icon: #FAFAFA;
     --color-background: #1A1A1A;
     --color-background-transparent: rgba(26, 26, 26, 0.6);
     --color-background-alt: #303030;
@@ -10,6 +10,11 @@
 
     --color-badge-bg: rgba(90, 90, 90, 0.6);
     --color-text: #EAE3D2;
+    --color-on-primary: #EAE3D2;
+
+    --toggle-track-off: #B9BCC3;
+    --toggle-thumb-off: #8B8F98;
+    --toggle-icon-off: #FFFFFF;
 
     --font-primary: 'Instrumental Sans', sans-serif;
     --font-weight-regular: 400;
@@ -29,4 +34,16 @@
     --transition-speed: 0.3s;
 
     --navbar-height: 5.5rem;
+}
+
+[data-theme="light"]{
+    --color-primary: #7B4FE0;
+    --color-background: #FAFAFA;
+    --color-background-transparent: rgba(250, 250, 250, 0.6);
+    --color-background-alt: #EDE9F5;
+    --color-background-alt-transparent: rgba(237, 233, 245, 0.6);
+    --color-text: #2B2B2B;
+    --border-card-color: rgba(40, 40, 40, 0.2);
+    --color-icon: #000000;
+    --color-badge-bg: rgba(237, 233, 245, 0.6);
 }
