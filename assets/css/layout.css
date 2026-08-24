@@ -272,4 +272,8 @@ body {
   .skills-category{
     max-width: none;
   }
+
+  .skills-category .badges{
+    justify-content: center;
+  }
 }
