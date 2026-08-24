@@ -19,11 +19,13 @@
 
         <div class="nav-right">
             <ul>
-                <li class="navItens"><a href="#about">Sobre</a></li>
-                <li class="navItens"><a href="#skills">Habilidades</a></li>
-                <li class="navItens"><a href="#projects">Projetos</a></li>
-                <li class="navItens"><a href="#contact">Contato</a></li>
+                <li class="navItens"><a href="#about" data-i18n="nav-about">Sobre</a></li>
+                <li class="navItens"><a href="#skills" data-i18n="nav-skills">Habilidades</a></li>
+                <li class="navItens"><a href="#projects" data-i18n="nav-projects">Projetos</a></li>
+                <li class="navItens"><a href="#contact" data-i18n="nav-contact">Contato</a></li>
             </ul>
+
+            <a href="assets/files/Curriculo PT-BR.pdf" class="cv-download" download data-i18n="btn-cv">Baixar CV</a>
 
             <button class="theme-toggle" id="themeToggle" type="button" aria-label="Alternar tema" aria-pressed="false">
                 <span class="track">
@@ -39,6 +41,8 @@
                 </span>
             </button>
 
+            <button class="lang-toggle" id="langToggle" type="button" aria-label="Alterar idioma">EN</button>
+
             <button class="menu" aria-label="Abrir Menu" aria-expanded="false">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -48,16 +52,16 @@
     </nav>
 
     <section id="about">
-        <h1 class="section-title">Sobre Mim</h1>
-        <p class="section-subtitle">
+        <h1 class="section-title" data-i18n="about-title">Sobre Mim</h1>
+        <p class="section-subtitle" data-i18n="about-subtitle">
             Desenvolvedora Back-end em formação, que enxergou na tecnologia uma ferramenta de inclusão.
             Busco criar soluções acessíveis que façam diferença real na vida das pessoas.
         </p>
 
         <div class="badges">
-            <span class="badge badge-primary">Sistemas para Internet - IFRS Porto Alegre</span>
+            <span class="badge badge-primary" data-i18n="badge-ifrs">Sistemas para Internet - IFRS Porto Alegre</span>
             <a href="https://news.sap.com/brazil/2025/07/sap-labs-abre-inscricoes-para-programa-com-foco-na-inclusao-de-mulheres-na-tecnologia-no-rio-grande-do-sul/" class="badge badge-primary">Digitalization Portfolio Program - SAP</a>
-            <a href="https://informativo.eldorado.org.br/residencia-full-stack" class="badge badge-primary">Residência Fullstack - Instituto Eldorado & Petrobras</a>
+            <a href="https://informativo.eldorado.org.br/residencia-full-stack" class="badge badge-primary" data-i18n="badge-eldorado">Residência Fullstack - Instituto Eldorado & Petrobras</a>
         </div>
 
         <div class="container">
@@ -70,8 +74,8 @@
                     <path d="M0 0 C3.12578143 1.6720747 5.39281175 3.7856235 7 7 C7.51512617 11.09157355 7.94367269 15.23589546 5.953125 18.95703125 C3.55501226 21.85592636 1.60351712 23.79811835 -2.171875 24.2734375 C-9.98876369 24.58137554 -9.98876369 24.58137554 -13.5625 21.625 C-17.3057723 17.59378368 -17.39037018 14.90519941 -17.359375 9.55078125 C-16.78039966 5.44131496 -15.00085071 3.78650423 -12 1 C-8.27533151 -0.86233425 -4.05504687 -0.57130829 0 0 Z " fill="currentColor" transform="translate(105,48)"/>
                     <path d="M0 0 C-1.04523656 2.64469157 -2.11693808 5.2681197 -3.25390625 7.875 C-6.51441214 15.66128273 -7.8482276 22.56973297 -8 31 C-10.64590014 31.02684679 -13.29153096 31.04676357 -15.9375 31.0625 C-16.69224609 31.07087891 -17.44699219 31.07925781 -18.22460938 31.08789062 C-20.14994313 31.09652441 -22.07535581 31.05224333 -24 31 C-25.67411854 29.32588146 -25.29113801 27.36225375 -25.375 25.0625 C-25.27021945 17.71833582 -23.09487795 12.17725113 -17.9453125 6.890625 C-12.39014039 2.23888919 -7.33599543 0 0 0 Z " fill="currentColor" transform="translate(29,77)"/>
                 </svg>
-                <h3 class="card-title">Trabalho em Equipe</h3>
-                <p class="card-subtitle">
+                <h3 class="card-title" data-i18n="card-teamwork-title">Trabalho em Equipe</h3>
+                <p class="card-subtitle" data-i18n="card-teamwork-desc">
                     Colaboração em times multidisciplinares, na faculdade e nos programas de formação.
                 </p>
             </div>
@@ -86,8 +90,8 @@
                     <path d="M0 0 C11.88 0 23.76 0 36 0 C36 1.32 36 2.64 36 4 C24.12 4 12.24 4 0 4 C0 2.68 0 1.36 0 0 Z " fill="currentColor" transform="translate(34,60)"/>
                     <path d="M0 0 C1.32 0 2.64 0 4 0 C4.21914063 0.72445312 4.43828125 1.44890625 4.6640625 2.1953125 C6.86062793 8.99844361 6.86062793 8.99844361 11.3125 14.4375 C12.199375 15.283125 13.08625 16.12875 14 17 C13.66796875 19.16015625 13.66796875 19.16015625 13 21 C10.21282111 20.91802415 8.48247233 20.43764605 6.40234375 18.55078125 C1.02347797 12.4582576 -0.27240352 8.0359038 0 0 Z " fill="currentColor" transform="translate(16,72)"/>
                 </svg>
-                <h3 class="card-title">Inglês Avançado</h3>
-                <p class="card-subtitle">
+                <h3 class="card-title" data-i18n="card-english-title">Inglês Avançado</h3>
+                <p class="card-subtitle" data-i18n="card-english-desc">
                     Leitura de documentações e conteúdos técnicos em inglês no dia a dia.
                 </p>
             </div>
@@ -105,8 +109,8 @@
                     <path d="M0 0 C3 1 3 1 4.25 2.8125 C5.11637742 5.33943414 4.88492145 6.52221994 4 9 C1.00675737 7.9024777 0.15389099 7.32317108 -1.25 4.375 C-1.4975 3.59125 -1.745 2.8075 -2 2 C-1.34 1.34 -0.68 0.68 0 0 Z " fill="currentColor" transform="translate(84,9)"/>
                     <path d="M0 0 C1.32 0 2.64 0 4 0 C4 2.64 4 5.28 4 8 C2.68 8 1.36 8 0 8 C0 5.36 0 2.72 0 0 Z " fill="currentColor" transform="translate(97,6)"/>
                 </svg>
-                <h3 class="card-title">Resolução de Problemas</h3>
-                <p class="card-subtitle">
+                <h3 class="card-title" data-i18n="card-problem-title">Resolução de Problemas</h3>
+                <p class="card-subtitle" data-i18n="card-problem-desc">
                     Análise cuidadosa do problema, buscando a solução mais eficiente.
                 </p>
             </div>
@@ -118,8 +122,8 @@
                     <path d="M0 0 C2.375 0.1875 2.375 0.1875 5 1 C5.268125 1.804375 5.53625 2.60875 5.8125 3.4375 C6.70760399 6.13152972 6.70760399 6.13152972 8.89453125 6.7734375 C10.91225849 7.26108436 12.95610075 7.63737271 15 8 C14.45276317 11.37462715 13.9451 13.08235 12 16 C11.54605448 18.27912938 11.54605448 18.27912938 11.375 20.6875 C11.30023438 21.49574219 11.22546875 22.30398437 11.1484375 23.13671875 C11.09945312 23.75160156 11.05046875 24.36648437 11 25 C10.27554688 24.91621094 9.55109375 24.83242188 8.8046875 24.74609375 C3.6168285 24.19963927 -0.85014052 23.91581906 -6 25 C-6.33 24.67 -6.66 24.34 -7 24 C-6.938125 22.741875 -6.87625 21.48375 -6.8125 20.1875 C-6.72884702 16.6093739 -6.72884702 16.6093739 -9 13.75 C-9.99 12.88375 -9.99 12.88375 -11 12 C-11 10.68 -11 9.36 -11 8 C-9.741875 7.608125 -8.48375 7.21625 -7.1875 6.8125 C-3.98017438 5.63175004 -3.12072078 5.16221855 -1 2.3125 C-0.505 1.1678125 -0.505 1.1678125 0 0 Z M2 8 C-0.475 9.485 -0.475 9.485 -3 11 C-2.34 13.31 -1.68 15.62 -1 18 C1.31 18 3.62 18 6 18 C6.66 15.69 7.32 13.38 8 11 C7.38125 10.87625 6.7625 10.7525 6.125 10.625 C4 10 4 10 2 8 Z " fill="currentColor" transform="translate(88,28)"/>
                     <path d="M0 0 C1.32 0 2.64 0 4 0 C4.8971875 1.423125 4.8971875 1.423125 5.8125 2.875 C8.52007031 6.74295758 10.46680646 7.12823201 15 8 C14.60219815 10.86417332 14.3137738 12.62347144 12.4375 14.875 C10.38682398 17.90643412 10.79412558 20.43151004 11 24 C8.09600408 24.7687048 6.11060736 25.01923606 3.125 24.5 C-0.47801196 23.92351809 -3.42715866 24.35688856 -7 25 C-7.03738281 24.39671875 -7.07476563 23.7934375 -7.11328125 23.171875 C-7.50066544 18.46249855 -7.86524216 15.67993312 -11 12 C-11 10.68 -11 9.36 -11 8 C-9.72125 7.773125 -8.4425 7.54625 -7.125 7.3125 C-4.92857624 6.83479969 -4.92857624 6.83479969 -3 6 C-1.46863044 3.55103367 -1.46863044 3.55103367 -1 1 C-0.67 0.67 -0.34 0.34 0 0 Z M1 8 C0.67 8.66 0.34 9.32 0 10 C-2.0625 11.125 -2.0625 11.125 -4 12 C-3.34 13.98 -2.68 15.96 -2 18 C0.31 18 2.62 18 5 18 C5.66 15.69 6.32 13.38 7 11 C5.02 10.01 3.04 9.02 1 8 Z " fill="currentColor" transform="translate(36,28)"/>
                 </svg>
-                <h3 class="card-title">Foco no Cliente</h3>
-                <p class="card-subtitle">
+                <h3 class="card-title" data-i18n="card-customer-title">Foco no Cliente</h3>
+                <p class="card-subtitle" data-i18n="card-customer-desc">
                     Soluções pensadas para atender quem realmente vai usá-las.
                 </p>
             </div>
@@ -127,8 +131,8 @@
     </section>
 
     <section id="skills" class="section-alt">
-        <h2 class="section-title">Habilidades Técnicas</h2>
-        <p class="section-subtitle">
+        <h2 class="section-title" data-i18n="skills-title">Habilidades Técnicas</h2>
+        <p class="section-subtitle" data-i18n="skills-subtitle">
             Stack construída ao longo da formação acadêmica e de programas de formação.
         </p>
 
@@ -157,7 +161,7 @@
             </div>
 
             <div class="skills-category">
-                <h3 class="skills">Ferramentas</h3>
+                <h3 class="skills" data-i18n="skills-tools-title">Ferramentas</h3>
                 <div class="badges">
                     <span class="badge">Linux</span>
                     <span class="badge">Git</span>
@@ -168,8 +172,8 @@
     </section>
 
     <section id="projects">
-        <h2 class="section-title">Projetos</h2>
-        <p class="section-subtitle">
+        <h2 class="section-title" data-i18n="projects-title">Projetos</h2>
+        <p class="section-subtitle" data-i18n="projects-subtitle">
             Aplicações desenvolvidas em diferentes contextos — da faculdade aos programas de formação —
             sempre com foco em soluções funcionais e acessíveis.
         </p>
@@ -177,8 +181,8 @@
         <div class="projects-container">
             <div class="project-card">
                 <img class="project-thumbnail" src="assets/img/projects/help-autismo.png" alt="Login - Help Autismo">
-                <h3 class="card-title">Help Autismo - TCC</h3>
-                <p class="card-subtitle">
+                <h3 class="card-title" data-i18n="project-help-title">Help Autismo - TCC</h3>
+                <p class="card-subtitle" data-i18n="project-help-desc">
                     Desenvolvimento completo de um sistema web voltado para a inclusão escolar de alunos autistas,
                     com foco em sua autonomia na sala de aula.
                 </p>
@@ -203,14 +207,14 @@
                         -21 89 -14 250 51 1050 429 1700 1517 1580 2645 -34 320 -114 597 -255 881 -382 768 -1116 1293 -1960 1402 -149 19 -387 27 -520 16z"/>
                         </g>
                     </svg>
-                    Código
+                    <span data-i18n="btn-code">Código</span>
                 </a>
             </div>
 
             <div class="project-card">
                 <img class="project-thumbnail" src="assets/img/projects/scam-detector.png" alt="Scam Message Detector/Detector de Mensagens de Golpe">
-                <h3 class="card-title">Detector de Mensagens de Golpe</h3>
-                <p class="card-subtitle">
+                <h3 class="card-title" data-i18n="project-scam-title">Detector de Mensagens de Golpe</h3>
+                <p class="card-subtitle" data-i18n="project-scam-desc">
                     Aplicação em Java pura para detecção de fraudes. Codificação da lógica de negócios para identificar links suspeitos,
                     termos de urgência e solicitações de dados sensíveis (PIX, CPF e cartão de crédito).
                 </p>
@@ -234,18 +238,18 @@
                         -21 89 -14 250 51 1050 429 1700 1517 1580 2645 -34 320 -114 597 -255 881 -382 768 -1116 1293 -1960 1402 -149 19 -387 27 -520 16z"/>
                         </g>
                     </svg>
-                    Código
+                    <span data-i18n="btn-code">Código</span>
                 </a>
             </div>
         </div>
     </section>
 
     <section id="contact" class="section-alt">
-        <h2 class="section-title">Entre em Contato</h2>
+        <h2 class="section-title" data-i18n="contact-title">Entre em Contato</h2>
 
         <div class="card">
-            <h3 class="card-title">Vamos nos Conectar!</h3>
-            <p class="card-subtitle">Aberta a oportunidades de emprego e trocas de ideias sobre tecnologia.</p>
+            <h3 class="card-title" data-i18n="contact-connect-title">Vamos nos Conectar!</h3>
+            <p class="card-subtitle" data-i18n="contact-connect-desc">Aberta a oportunidades de emprego e trocas de ideias sobre tecnologia.</p>
 
             <div class="social-links">
                 <a href="https://github.com/larissaSM23" class="social-link">
@@ -300,6 +304,7 @@
         </div>
     </section>
 
+    <script src="assets/js/translations.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>

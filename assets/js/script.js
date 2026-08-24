@@ -48,3 +48,32 @@ themeToggle.addEventListener('click', function() {
   setTheme(newTheme);
   localStorage.setItem('theme', newTheme);
 });
+
+const elementsToTranslate = document.querySelectorAll('[data-i18n]');
+const langToggle = document.getElementById('langToggle');
+const cvDownload = document.querySelector('.cv-download');
+
+function setLanguage(lang) {
+  for (let i = 0; i < elementsToTranslate.length; i++) {
+    const el = elementsToTranslate[i];
+    const key = el.getAttribute('data-i18n');
+
+    if (translations[lang][key]) {
+      el.textContent = translations[lang][key];
+    }
+  }
+
+  cvDownload.href = translations[lang]['cv-file'];
+  document.documentElement.lang = lang === 'pt' ? 'pt-br' : 'en';
+  langToggle.textContent = lang === 'pt' ? 'EN' : 'PT';
+  localStorage.setItem('lang', lang);
+}
+
+const savedLang = localStorage.getItem('lang') || 'pt';
+setLanguage(savedLang);
+
+langToggle.addEventListener('click', function() {
+  const currentLang = localStorage.getItem('lang') || 'pt';
+  const newLang = currentLang === 'pt' ? 'en' : 'pt';
+  setLanguage(newLang);
+});
