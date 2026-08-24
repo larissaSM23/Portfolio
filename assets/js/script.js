@@ -25,11 +25,21 @@ for (let i = 0; i < sections.length; i++) {
 }
 
 const menuButton = document.querySelector('.menu');
-const navList = document.querySelector('#navbar ul');
+
+const navList = document.querySelector('.nav-menu');
 
 menuButton.addEventListener('click', function(){
   navList.classList.toggle('open');
+  const isOpen = navList.classList.contains('open');
+  menuButton.setAttribute('aria-expanded', isOpen);
 });
+
+for (let i = 0; i < navLinks.length; i++) {
+  navLinks[i].addEventListener('click', function(){
+    navList.classList.remove('open');
+    menuButton.setAttribute('aria-expanded', 'false');
+  })
+}
 
 const themeToggle = document.getElementById('themeToggle');
 const htmlEl = document.documentElement;

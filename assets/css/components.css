@@ -1,11 +1,4 @@
-.container{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  max-width: 1200px;
-  gap: 1.3rem;
-  margin: 0 auto;
-}
-
+/* ----- CARDS (base compartilhada: Sobre, Habilidades, Projetos) ----- */
 .card,
 .skills-category,
 .project-card{
@@ -17,21 +10,50 @@
   margin-bottom: 2rem;
 }
 
+.card-title{
+  color: var(--color-primary);
+  font-size: var(--font-size-heading);
+}
+
+.card-subtitle{
+  color: var(--color-text);
+  font-size: var(--font-size-badge-lg);
+}
+
+/* ----- CONTAINERS GERAIS ----- */
+.container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1200px;
+  gap: 1.3rem;
+  margin: 0 auto;
+}
+
+/* ----- CARD: SOBRE ----- */
 .card,
 .project-card{
   background-color: var(--color-background-alt-transparent);
   gap: 0.25rem;
 }
 
-.project-card{
-  width: 26rem;
-  overflow: hidden;
+.img-card{
+  height: 3rem;
+  width: 3rem;
+  display: block;
+  margin-bottom: 1rem;
+  color: var(--color-icon);
 }
 
+/* ----- CARD: HABILIDADES ----- */
 .skills-category{
   background-color: var(--color-background-transparent);
   gap: 1.5rem;
-  max-width: 23rem;
+  width: 23rem;
+}
+
+.skills{
+  color: var(--color-primary);
+  font-size: var(--font-size-subheading)
 }
 
 .skills-container{
@@ -43,6 +65,50 @@
   justify-content: center;
 }
 
+/* ----- CARD: PROJETOS ----- */
+.project-card{
+  width: 26rem;
+  overflow: hidden;
+}
+
+.project-thumbnail{
+  width: calc(100% + 3rem);
+  max-width: calc(100% + 3rem);
+  height: 12rem;
+  object-fit: cover;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  margin: -1.5rem -1.5rem 0 -1.5rem;
+}
+
+.projects-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
+}
+
+.btn-code{
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--color-primary);
+  color: var(--color-on-primary);
+  text-decoration: none;
+  padding: 0.4rem 1rem;
+  border-radius: var(--border-radius);
+  width: fit-content;
+  margin-top: 1.5rem;
+}
+
+.btn-code .icon,
+.icon-box .icon{
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+/* ----- BADGES ----- */
 .badge{
   background-color: var(--color-badge-bg);
   border-radius: var(--border-radius);
@@ -65,77 +131,20 @@
   justify-content: center;
 }
 
+.badge-primary {
+  background-color: var(--color-primary);
+  color: var(--color-background);
+  font-size: var(--font-size-badge-sm);
+  width: 17rem;
+  text-align: center;
+}
+
 .project-card .badge {
   font-size: var(--font-size-body);
   padding: 0.3rem 0.6rem;
 }
 
-.projects-container{
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  justify-content: center;
-}
-
-.img-card{
-  height: 3rem;
-  width: 3rem;
-  display: block;
-  margin-bottom: 1rem;
-  color: var(--color-icon);
-}
-
-.skills{
-  color: var(--color-primary);
-  font-size: var(--font-size-subheading)
-}
-
-.project-thumbnail{
-  width: calc(100% + 3rem);
-  max-width: calc(100% + 3rem);
-  height: 12rem;
-  object-fit: cover;
-  border-radius: var(--border-radius) var(--border-radius) 0 0;
-  margin: -1.5rem -1.5rem 0 -1.5rem;
-}
-
-.card-title{
-  color: var(--color-primary);
-  font-size: var(--font-size-heading);
-}
-
-.card-subtitle{
-  color: var(--color-text);
-  font-size: var(--font-size-badge-lg);
-}
-
-.btn-code{
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  background-color: var(--color-primary);
-  color: var(--color-on-primary);
-  text-decoration: none;
-  padding: 0.4rem 1rem;
-  border-radius: var(--border-radius);
-  width: fit-content;
-  margin-top: 1.5rem;
-}
-
-.btn-code .icon,
-.icon-box .icon{
-  width: 1.2rem;
-  height: 1.2rem;
-}
-
-.badge-primary {
-  background-color: var(--color-primary);
-  color: var(--color-background);
-  font-size: var(--font-size-badge-sm);
-}
-
+/* ----- CONTATO: LINKS REDES SOCIAIS ----- */
 .social-links{
   display: flex;
   flex-direction: column;
