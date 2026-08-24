@@ -1,26 +1,26 @@
 .container{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    max-width: 1200px;
-    gap: 1.3rem;
-    margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1200px;
+  gap: 1.3rem;
+  margin: 0 auto;
 }
 
 .card,
 .skills-category,
 .project-card{
-    display: flex;
-    flex-direction: column;
-    padding: 1.5rem;
-    border: 1px solid var(--border-card-color);
-    border-radius: var(--border-radius);
-    margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border: 1px solid var(--border-card-color);
+  border-radius: var(--border-radius);
+  margin-bottom: 2rem;
 }
 
 .card,
 .project-card{
-    background-color: var(--color-background-alt-transparent);
-    gap: 0.25rem;
+  background-color: var(--color-background-alt-transparent);
+  gap: 0.25rem;
 }
 
 .project-card{
@@ -29,36 +29,36 @@
 }
 
 .skills-category{
-    background-color: var(--color-background-transparent);
-    gap: 1.5rem;
-    max-width: 23rem;
+  background-color: var(--color-background-transparent);
+  gap: 1.5rem;
+  max-width: 23rem;
 }
 
 .skills-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .badge{
-    background-color: var(--color-badge-bg);
-    border-radius: var(--border-radius);
-    border: 1px solid var(--border-card-color);
-    font-size: var(--font-size-badge-lg);
-    padding: 0.4rem 0.7rem;
-    color: var(--color-text);
-    min-width: 4rem;
-    text-align: center
+  background-color: var(--color-badge-bg);
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-card-color);
+  font-size: var(--font-size-badge-lg);
+  padding: 0.4rem 0.7rem;
+  color: var(--color-text);
+  min-width: 4rem;
+  text-align: center
 }
 
 .badges {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-bottom: 2.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
 }
 
 #about .badges {
@@ -71,12 +71,12 @@
 }
 
 .projects-container{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
 .img-card{
@@ -148,7 +148,6 @@
   align-items: center;
   gap: 0.5rem;
   color: var(--color-text);
-  
 }
 
 .icon-box{
@@ -159,5 +158,5 @@
   border-radius: var(--border-radius);
   width: 2.5rem;
   height: 2.5rem;
-  color: var(--color-on-primary);;
+  color: var(--color-on-primary);
 }
