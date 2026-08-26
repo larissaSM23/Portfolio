@@ -133,10 +133,11 @@
 
 .badge-primary {
   background-color: var(--color-primary);
-  color: var(--color-background);
+  color: var(--color-on-primary);
   font-size: var(--font-size-badge-sm);
   width: 17rem;
   text-align: center;
+  border: none;
 }
 
 .project-card .badge {
