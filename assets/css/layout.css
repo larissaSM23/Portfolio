@@ -270,7 +270,7 @@ body {
   }
 
   .skills-category{
-    max-width: none;
+    width: 100%;
   }
 
   .skills-category .badges{
